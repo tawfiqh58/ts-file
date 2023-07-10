@@ -2,6 +2,8 @@ declare global {
   interface Window {
     tawfiq: string = 'Hello world!'; // Interface exists only in typescript world
   }
+
+  var tariq: string // Though it's string
 }
 
 window.tawfiq = "I am in d.ts file!"
