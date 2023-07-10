@@ -1,6 +1,12 @@
 "use strict";
 window.tawfiq = 'I am here!';
-// window.tariq = 'Hi I am tariq'; Error: Property 'tariq' does not exist
 console.log(window.tawfiq);
-console.log(globalThis.tariq + 1); // Though it's string we can add number to it
-// bacause
+// window.tamanna = 'Hi I am tamanna'; Error: Property 'tariq' does not exist
+// globalThis.tariq = 1; Error: Type 'number'
+console.log(globalThis.tariq);
+const addToWindow = {
+    addTawfiq: (a, b) => a + b,
+};
+Object.assign(window, addToWindow);
+const result = window.addTawfiq(1, 1);
+console.log(result);
