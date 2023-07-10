@@ -8,7 +8,7 @@ declare global {
   // by doing this you can access tariq inside your ts file
   // that's it.
 }
-window.tawfiq = 'I am in d.ts file!'; // no effect
+window.tawfiq = 'I am in d.ts file!'; // no effect in this file
 
 declare global {
   var tawfiq: string;
